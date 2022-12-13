@@ -1,0 +1,39 @@
+.header__nav--menu{
+margin: 10px 0;
+}
+
+.header__nav--menu i{
+    margin-left: 3px;
+
+}
+
+.home__header--buscar{
+    margin: 10px;
+    display: inline
+}
+
+.home__header--buscar i{
+    
+}
+
+
+.header__section--cuotas{
+    font-size: 12px;
+    text-align: center;
+}
+
+.home__header--logo{
+    width: 50%;
+    margin: 10px;
+
+}
+
+.home__header__section--compra{
+    display: flex;
+    margin-left: 45px;
+
+}
+
+.home__header__section--compra i{
+    font-size:12px;
+}

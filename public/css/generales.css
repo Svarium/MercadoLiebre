@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: 'Roboto';
+}
+
+a{
+    text-decoration: none;
+    color: var(--grisOscuro);
+}
+
+li{
+    list-style: none;
+}
+
+ol, ul {
+    padding: 0;
+}
