@@ -1,0 +1,27 @@
+.home__footer__section{
+    padding:10px;
+    text-align: center;
+    display: block;
+}
+
+
+.home__footer__article--textos {
+    padding: 10px;
+    color: var(--GrisOscuro);
+
+}
+
+.home__footer__article--textos strong{
+    font-size:15px;
+}
+
+.home__footer__article--textos i{
+    margin: 10px;
+    font-size:2em;
+    color: var(--Celeste);
+}
+
+.home__footer__article--copy{
+    font-size: 9px;
+    color: var(--GrisOscuro);
+}

@@ -4,18 +4,12 @@ margin: 10px 0;
 
 .header__nav--menu i{
     margin-left: 3px;
-
 }
 
 .home__header--buscar{
     margin: 10px;
-    display: inline
+    display: inline-block;
 }
-
-.home__header--buscar i{
-    
-}
-
 
 .header__section--cuotas{
     font-size: 12px;
@@ -36,4 +30,19 @@ margin: 10px 0;
 
 .home__header__section--compra i{
     font-size:12px;
+   
+}
+
+.burger-menu{
+    background-color: var(--Celeste);
+    margin: 0 auto 30px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 28px;
+    color: white;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align:center;
+    padding: 3px;   
 }
