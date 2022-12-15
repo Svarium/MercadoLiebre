@@ -1,7 +1,26 @@
-.home__main__section--titulares{
-    font-size: 24px;
+.home__main__section{
+
 }
 
+.home__main__section--titulares{
+    font-size: 24px;
+    color: var(--GrisOscuro);
+}
+
+.home__main__section__article{
+    margin: 10px;
+    background-color: white;
+}
+
+.home__main__section__article img{
+    width: 100%;
+}
+
+.home__main__main__section__article--ofertas{
+     border-top: solid 1px #ebebeb;
+     padding: 15px;
+    
+}
 
 .home__main__section--precio{
     font-size:12px;
@@ -9,10 +28,14 @@
 
 .home__main__section--descuento{
     font-size: 16px;
+    color: var(--Verde);
 }
 
 .home__main__section--descipciones{
     font-size: 16px;
+    margin-top: 20px;
+    color: var(--GrisOscuro);
+    display: none;
 }
 
 .home__footer__article--textos{
@@ -21,4 +44,35 @@
 
 .home__header{
     background-color: var(--Amarillo);
+}
+
+/* TABLETS */
+
+@media (min-width: 361px){
+    .home__main__section--descipciones{
+        font-size: 16px;
+        margin-top: 20px;
+        color: var(--GrisOscuro);
+        display: block;
+    }
+
+    .home__main__section__article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+
+    }
+    
+
+
+}
+
+/* DESKTOP */
+
+@media (min-width: 769px){
+    .home__main__section--descipciones{
+        font-size: 16px;
+        margin-top: 20px;
+        color: var(--GrisOscuro);
+        display: block;
+    }
+    
 }
