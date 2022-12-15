@@ -1,5 +1,6 @@
 .header__nav--menu{
 margin: 10px 0;
+display: none;
 }
 
 .header__nav--menu i{
@@ -8,12 +9,12 @@ margin: 10px 0;
 
 .home__header--buscar{
     margin: 10px;
-    display: inline-block;
+    display: block;
 }
 
 .header__section--cuotas{
     font-size: 12px;
-    text-align: center;
+    display: block;
 }
 
 .home__header--logo{
@@ -22,14 +23,18 @@ margin: 10px 0;
 
 }
 
-.home__header__section--compra{
-    display: flex;
+.home__header__section--compra{    
     margin-left: 45px;
+    margin: 0 auto 30px;
+    display: block;
+    text-align: center;
+   
+    
 
 }
 
 .home__header__section--compra i{
-    font-size:12px;
+    
    
 }
 
@@ -41,8 +46,37 @@ margin: 10px 0;
     height: 40px;
     font-size: 28px;
     color: white;
+    margin-top:10px;
     margin-bottom: 10px;
     border-radius: 5px;
     text-align:center;
     padding: 3px;   
+}
+
+
+/* TABLETS */
+@media (min-width: 361px){
+    .header__nav--menu{
+        display: block;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+}
+
+/* DESKTOP */
+
+@media (min-width: 769px){ 
+
+    .header__nav--menu{
+        display: block;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+
 }
