@@ -10,20 +10,30 @@
 
 </head>
 <body>
-    <header class="home__header">
-        <section>
-            <img class="home__header--logo" src="/images/logo-mercado-liebre.svg" alt="">
-            <!-- <p class="header__section--busqueda">Lugar para poner la barra de busqueda</p> -->
-            <div class="home__header--buscar">
-            <input type="search" name="busqueda" placeholder="Buscar productos, marcas">
-           <button>
-            <i class="fa-solid fa-magnifying-glass"></i>
-           </button> 
+    <header class="home__header">       
+            <div class="home__header--logo">
+                <img src="/images/logo-mercado-liebre.svg" alt="">
+            </div>       
+           <div class="header--buscador">
+            <form action="">
+                <div class="header__buscador--box">
+                    <input type="search" name="busqueda" placeholder="Buscar productos, marcas">
+                <button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button> 
             </div>
-            <div class="home__header__section--compra">
+        </form>           
+    </div>
+    <div class="header__section--cuotas">
+        <p><i class="fa-sharp fa-solid fa-hand-holding-dollar">
+        </i>Comprá en cuotas y sin tarjeta de crédito</p>
+    </div>    
+            
+           <!--  <div class="home__header__section--compra">
             <p class="header__section--cuotas"> <span><i class="fa-sharp fa-solid fa-hand-holding-dollar"></i></span> Comprá en cuotas y sin tarjeta de crédito</p>
-            </div>
-        </section>
+            </div> -->
+
+     
         <nav class="header__nav">
             <ul class="header__nav--menu">
                 <li><a href="#">Ofertas</a></li>
@@ -32,7 +42,7 @@
                 <li><a href="#">Ayuda</a></li>
             </ul>
 
-            <ul class="header__nav--menu">
+            <ul class="header__nav--user">
                 <li><a href="#">Crea tu cuenta</a><i class="fa-regular fa-address-card"></i></li>
                 <li><a href="#">Ingresa</a><i class="fa-solid fa-right-to-bracket"></i></li>
                 <li><a href="#">Mis Compras</a><i class="fa-solid fa-basket-shopping"></i></li>
@@ -41,13 +51,18 @@
         </nav>
 
         <div class="burger-menu">
-            <i class="fas fa-bars"></i>
-            </div> <br>
+            <button>
+                <i class="fas fa-bars"></i>
+            </button>
+        </div> 
             
     </header>
     <main class="home__main">
+        <div class="home__main--banner">
+           <img src="/images/img-home-banner.jpg" alt="">
+        </div>
         <section class="home__main__section"> <!-- ultimas visitas -->
-            <h3 class="home__main__section--titulares"> BASADO EN TU ULTIMA VISITA</h3>
+            <h2 class="home__main__section--titulares"> BASADO EN TU ULTIMA VISITA</h2>
             <article class="home__main__section__article">
                 <img src="images/img-cafetera-moulinex.jpg" alt="imagen-cafetera">
                 <div class="home__main__main__section__article--ofertas">

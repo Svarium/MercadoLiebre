@@ -1,44 +1,84 @@
-.header__nav--menu{
-margin: 10px 0;
-display: none;
-}
-
-.header__nav--menu i{
-    margin-left: 3px;
-}
-
-.home__header--buscar{
-    margin: 10px;
-    display: block;
-}
-
-.header__section--cuotas{
-    font-size: 12px;
-    display: block;
+.home__header{
+    background-color: var(--Amarillo);
+    display: flex;
+    padding:10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px 0;
 }
 
 .home__header--logo{
     width: 50%;
-    margin: 10px;
-
 }
 
-.home__header__section--compra{    
-    margin-left: 45px;
-    margin: 0 auto 30px;
-    display: block;
+.home__header--logo img{ 
+    width: 90%;
+}
+
+
+
+.header--buscador{
+    width: 50%;
+}
+
+.header__buscador--box{
+   position: relative; 
+}
+
+.header__buscador--box button{
+    position: absolute;
+    top: 4px;
+    right: 2px;
+    border: none;
+    background-color: white;
+    border-left: 1px solid var( --GrisOscuro);
+    color: var(--GrisOscuro);
+}
+
+.header__buscador--box input{
+    width: 100%;
+    padding:5px;
+    border: none;
+    border-radius: 5px;
+    padding-right: 20px;
+}
+
+
+
+
+.header__nav{
+margin: 10px 0;
+display: none;
+}
+
+
+
+/* .header__nav--menu i{
+    margin-left: 3px;
+} */
+
+
+
+.home__header--buscar{  
+    width: 50%;    
+}
+
+.header__section--cuotas{
+    font-size: 12px;   
     text-align: center;
-   
-    
-
+    width: 100%; 
 }
 
-.home__header__section--compra i{
-    
-   
-}
 
 .burger-menu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.burger-menu button {
     background-color: var(--Celeste);
     margin: 0 auto 30px;
     display: block;
@@ -50,19 +90,47 @@ display: none;
     margin-bottom: 10px;
     border-radius: 5px;
     text-align:center;
-    padding: 3px;   
+    padding: 3px; 
+    text-decoration: none;  
 }
 
 
 /* TABLETS */
 @media (min-width: 361px){
-    .header__nav--menu{
-        display: block;
+
+    .home__header{
+       align-items: center; 
+       padding: 20px;
     }
+
+    .home__header--logo{
+        width: 30%;
+    }
+    .header--buscador{
+        width: 30%;
+    }
+
+    .header__section--cuotas{
+        width: 30%;
+    }
+
+    .header__nav{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+   .header__nav ul{
+        display: flex;
+        gap: 10px;
+   }
 
     .burger-menu{
         display: none;
+       
     }
+
+   
 
 }
 
