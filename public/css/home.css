@@ -10,9 +10,12 @@
 
 }
 
-.home__main--banner img{
+.home__main--banner{
     width: 100%;
-    
+}
+
+.home__main--banner img{
+    width: 100%;    
 }
 
 .home__main__section__article{
