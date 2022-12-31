@@ -1,12 +1,14 @@
 .home__main__section{
-
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .home__main__section--titulares{
-    font-size: 24px;
+    font-size: 20px;
     color: var(--GrisOscuro);
     width: 100%;
     margin: 10px 0;
+    text-align: center;
 
 }
 
@@ -104,6 +106,7 @@
 
     .home__main__section__article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 47%;
 
     }
     
@@ -119,6 +122,11 @@
         margin-top: 20px;
         color: var(--GrisOscuro);
         display: block;
+    }
+
+    .home__main__section__article{
+        width: 23%;
+        align-self: center;
     }
     
 }
