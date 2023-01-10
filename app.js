@@ -14,6 +14,8 @@ app.use(express.static(path.resolve(__dirname, 'public')));
 /* rutas */
 
 app.get('/', (req, res) => res.sendFile(path.resolve(__dirname, 'views', 'home.html')));
+app.get('/registro', (req, res) => res.sendFile(path.resolve(__dirname, 'views', 'registro.html')));
+app.get('/login', (req, res) => res.sendFile(path.resolve(__dirname, 'views', 'login.html')));
 
 
 
