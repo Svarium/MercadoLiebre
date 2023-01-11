@@ -1,0 +1,30 @@
+.registro--main{
+    width: 80%;
+}
+
+.fomulario-registro{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 5px;    
+    /* background-color: white; */
+}
+
+.datos--personales{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.form--perfil{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.form--intereses{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}

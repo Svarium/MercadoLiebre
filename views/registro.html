@@ -60,21 +60,29 @@
 
     <main class="registro--main">
         <!-- formulario registro -->
-        <div class="registro__main--form">
+        <div class="registro__main--formulario">
             <h2>Formulario de Registro</h2>
-            <form action="/registro" method="POST">
+            <form action="/registro" method="POST" class="fomulario-registro">
+                <div class="datos--personales">
                 <input type="text" name="nombre-apellido" id="nombre-apellido" placeholder="Nombre y apellido" required>
                 <input type="text" name="usuario" id="usuario"  placeholder="Nombre de usuario" required>
                 <input type="email" name="email" id="email" placeholder="E-mail">
                 <label for="fecha">Fecha de Nacimiento</label>
                 <input type="date" name="fecha" id="fecha">
                 <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio">
-                <p>Perfil de Usuario</p>
+                </div>
+                
+
+                <div class="form--perfil">
+                    <p>Perfil de Usuario</p>
                 <label for="perfil-comprador">Comprador</label>
                 <input type="radio" name="perfil" id="perfil-comprador" value="comprador">
                 <label for="perfil-vendedor">Vendedor</label>
                 <input type="radio" name="perfil" id="perfil-vendedor" value="vendedor">
-                <p>Intereses</p>
+
+                </div>
+                <div class="form--intereses">
+                    <p>Intereses</p>
                 <label>
                     <input type="checkbox" name="intereses" id="interes" value="electro">Electro
                 </label>
@@ -90,12 +98,19 @@
                 <label>
                     <input type="checkbox" name="intereses" id="interes" value="electro">Vida sana
                 </label>
-                <label for="foto">Foto de usuario</label>
-                <input type="file" name="foto" accept=".jpg" id="foto">
-                <input type="password" name="password" id="password" placeholder="Ingrese su contraseña" required>
-                <input type="password" name="password2" id="password2" placeholder="Confirme su contraseña" required>
-                <button type="submit">Enviar</button>
-                <button type="reset">Borrar</button>
+                </div>
+
+                <div class="form--password">
+                    <label for="foto">Foto de usuario</label>
+                    <input type="file" name="foto" accept=".jpg" id="foto">
+                    <input type="password" name="password" id="password" placeholder="Ingrese su contraseña" required>
+                    <input type="password" name="password2" id="password2" placeholder="Confirme su contraseña" required>
+                </div>
+
+                <div class="form--buttons">
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Borrar</button>
+                </div>
             </form>
 
         </div>
