@@ -61,8 +61,9 @@
     <main class="registro--main">
         <!-- formulario registro -->
         <div class="registro__main--formulario">
-            <h2>Formulario de Registro</h2>
+            <h2 class="titulo--registro">Formulario de Registro</h2>
             <form action="/registro" method="POST" class="fomulario-registro">
+
                 <div class="datos--personales">
                 <input type="text" name="nombre-apellido" id="nombre-apellido" placeholder="Nombre y apellido" required>
                 <input type="text" name="usuario" id="usuario"  placeholder="Nombre de usuario" required>
@@ -72,31 +73,39 @@
                 <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio">
                 </div>
                 
-
-                <div class="form--perfil">
-                    <p>Perfil de Usuario</p>
+                <p>Perfil del usuario</p>
+                <div class="form--perfil"> 
                 <label for="perfil-comprador">Comprador</label>
                 <input type="radio" name="perfil" id="perfil-comprador" value="comprador">
                 <label for="perfil-vendedor">Vendedor</label>
                 <input type="radio" name="perfil" id="perfil-vendedor" value="vendedor">
 
                 </div>
-                <div class="form--intereses">
-                    <p>Intereses</p>
-                <label>
-                    <input type="checkbox" name="intereses" id="interes" value="electro">Electro
+
+                <div class="form--intereses">                   
+                <input type="checkbox" name="intereses" id="interes" value="electro">
+                <label for="interes">
+                    Electro
                 </label>
+                <input type="checkbox" name="intereses" id="interes" value="moda">
                 <label>
-                    <input type="checkbox" name="intereses" id="interes" value="electro">Moda
+                    Moda
                 </label>
+                
+                <input type="checkbox" name="intereses" id="interes" value="hogar">
                 <label>
-                    <input type="checkbox" name="intereses" id="interes" value="electro">Hogar
+                    Hogar
                 </label>
+            
+              
+                <input type="checkbox" name="intereses" id="interes" value="jugueteria">
                 <label>
-                    <input type="checkbox" name="intereses" id="interes" value="electro">Juguetería
+                    Juguetería
                 </label>
+               
+                <input type="checkbox" name="intereses" id="interes" value="vidaSana">
                 <label>
-                    <input type="checkbox" name="intereses" id="interes" value="electro">Vida sana
+                    Vida sana
                 </label>
                 </div>
 

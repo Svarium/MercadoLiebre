@@ -2,29 +2,110 @@
     width: 80%;
 }
 
+.titulo--registro{
+    font-size: 20px;
+    color: var(--GrisOscuro);
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+}
+
 .fomulario-registro{
     display: flex;
     flex-direction: column;
     width: 100%;
     flex-wrap: wrap;
-    gap: 5px;    
-    /* background-color: white; */
+    gap: 5px;        
+}
+
+
+.fomulario-registro p{
+    font-weight: bolder;
+    text-align:start;
+    margin: 10px 0 0 0;
+    font-size: 15px;
+}
+
+input{
+    width: 100%;
+    border: none;
+    padding: 10px;
+    background-color: white;
 }
 
 .datos--personales{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    gap: 10px;
+}
+
+.datos--personales label{
+    align-self:flex-start;
+    font-weight: bolder;
+    font-size: 15px;
+
 }
 
 .form--perfil{
     display: flex;
     flex-direction: row;
-    
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+    margin: 20px 0;
 }
 
+/* .form--perfil p{
+    align-self:flex-start;
+    font-weight: bolder;
+    width: 100%;
+    text-align: center;
+    flex-direction: row;
+} */
+
 .form--intereses{
+    width: 100%;
+    display: flex;
+    flex-direction:row; 
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.form--intereses label{
+    width: 70%;
+}
+
+.form--intereses input{
+    width: 20%;
+}
+
+.form--password{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.form--password label{
+    align-self:flex-start;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.form--buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;    
+}
+
+.form--buttons button{
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid var( --Azul);
+    background-color: white;
+
 }
