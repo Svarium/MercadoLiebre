@@ -1,6 +1,8 @@
 .home__main__section{
     display: flex;
     flex-wrap: wrap;
+   /*  justify-content: space-between;
+    align-content: flex-start; */
 }
 
 .home__main__section--titulares{
@@ -9,7 +11,6 @@
     width: 100%;
     margin: 10px 0;
     text-align: center;
-
 }
 
 .home__main--banner{
@@ -23,7 +24,33 @@
 .home__main__section__article{
     margin: 10px;
     background-color: white;
+    transition: all 0.5s;
 }
+
+.home__main__section--descripciones{
+    font-size: 12px;
+    margin: 0;
+    color: var(--GrisOscuro);
+    /* display: none; */
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+    align-self: flex-start;  
+    transition: all 0.5s; 
+}
+
+
+.home__main__section__article:hover .home__main__section--descripciones{
+ /*  display: block; */
+ height: 18px;
+}
+
+.home__main__section__article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+
+
 
 .home__main__section__article img{
     width: 100%;
@@ -55,7 +82,14 @@
     position: absolute;
     right: 20px;
     top: -15px;
+    transition: all 1.5s;
 }
+
+.home__main__main__section__article--ofertas button:hover{
+    transform: rotate(-90deg);
+}
+
+
 
 .home__main__main__section__article--ofertas i{
    /*  display: block;
@@ -80,15 +114,8 @@
     width: 70%;
 }
 
-.home__main__section--descripciones{
-    font-size: 12px;
-    margin-top: 20px;
-    color: var(--GrisOscuro);
-    display: none;
-    width: 100%;
-    align-self: flex-start;
-   
-}
+
+
 
 .home__footer__article--textos{
     font-size:12px;
@@ -101,13 +128,12 @@
         font-size: 16px;
         margin-top: 20px;
         color: var(--GrisOscuro);
-        display: block;
+        /* display: block; */
     }
 
     .home__main__section__article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        /* box-shadow: 0px 0px 10px rgb(100, 100, 100); */
         width: 47%;
-
     }
     
 
@@ -117,11 +143,15 @@
 /* DESKTOP */
 
 @media (min-width: 769px){
+    .home__main__section{
+
+    }
+
     .home__main__section--descripciones{
         font-size: 16px;
         margin-top: 20px;
         color: var(--GrisOscuro);
-        display: block;
+       /*  display: block; */
     }
 
     .home__main__section__article{
