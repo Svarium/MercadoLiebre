@@ -24,4 +24,30 @@
 .home__footer__article--copy{
     font-size: 9px;
     color: var(--GrisOscuro);
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* desktop */
+
+@media (min-width:1024px) {
+    .home__footer__section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
+        width: 100%;
+    }
+
+    .home__footer__article--textos{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 33%;
+    }
+    .home__footer__article--textos p{
+        width: 55%;
+        align-self: center;
+    }
+
 }

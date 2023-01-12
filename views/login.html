@@ -15,10 +15,10 @@
                 <a href="/"><img src="/images/logo-mercado-liebre.svg" alt=""></a>
             </div>       
            <div class="header--buscador">
-            <form action="">
+            <form action="" method="get">
                 <div class="header__buscador--box">
                     <input type="search" name="busqueda" placeholder="Buscar productos, marcas">
-                <button>
+                <button type="submit">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button> 
             </div>
@@ -59,14 +59,14 @@
     </header>
 
     <main class="login__main">
-        <div class="login__main--form">
-            <form action="/login" method="POST">
-                <input type="text" name="usuario" id="usuario" placeholder="Nombre de Usuario">
-                <input type="password" name="password" id="password" placeholder="Contraseña">
+        <h2 class="titulo--registro">Login de usuarios</h2>
+        
+            <form action="/login" method="POST" class="login__main--form">
+                <input type="text" name="usuario" id="usuario" placeholder="Nombre de Usuario" required>
+                <input type="password" name="password" id="password" placeholder="Contraseña" required>
                 <button type="submit"><a href="/">Enviar</a></button>
             </form>
-        </div>
-        
+        <hr>
     </main>
 
     <footer>

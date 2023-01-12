@@ -1,0 +1,39 @@
+.login__main{
+    width: 90%;
+}
+
+.login__main--form{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;  
+    justify-content: center;
+}
+
+.login__main--form button{
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid var( --Azul);
+    background-color: white;
+}
+
+/* TABLET */
+
+@media (min-width:768px) {
+    .login__main{
+        width: 60%;
+    }
+}
+
+/* DESKTOP */
+
+@media (min-width:1024px) {
+    .login__main{
+        width: 40%;
+    }
+
+    .login__main--form button{
+        margin-bottom: 30px;
+    }
+}
