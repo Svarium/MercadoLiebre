@@ -1,8 +1,8 @@
 .home__main__section{
     display: flex;
     flex-wrap: wrap;
-   /*  justify-content: space-between;
-    align-content: flex-start; */
+    justify-content: space-between;
+    align-content: flex-start;
 }
 
 .home__main__section--titulares{
@@ -35,7 +35,7 @@
     height: 0;
     overflow: hidden;
     width: 100%;
-    align-self: flex-start;  
+    /* align-self: flex-start;  */ 
     transition: all 0.5s; 
 }
 
